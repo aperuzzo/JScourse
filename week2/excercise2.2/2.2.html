@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Week 2</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <style type="text/css">
+            ol li, ul li{
+                font-size:18px;
+            }
+            #ourDiv{
+                height:100px;
+                width:100px;
+                background-color:red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Mouse Events.</h1>
+        </header>
+        <main>  
+            <section>
+            
+                <a href="#awesomeHREF" class="awesomeClass" id="ourLink">
+                    What's up.
+                </a>
+                <br/>
+                <br/>
+                <br/>
+                <div id="ourDiv"></div>
+
+                <p id="myParagraph">Hey Hey Hey</p>
+                <img id="myImage"src="image.jpg">
+
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+        <script type="text/javascript">
+            var ourLink = document.getElementById('ourLink');
+            var ourFunction = function(){
+                alert('What are you clicking me for?');
+            };
+            ourLink.addEventListener('mouseup',ourFunction);
+
+            var ourDiv = document.getElementById('ourDiv');
+            var ourFunction = function(){
+                alert('What are you entering me for?');
+            };
+            ourDiv.addEventListener('mouseup', ourFunction);
+
+            var myParagraph = document.getElementById('myParagraph');
+            var ourFunction= function(){
+                alert('get the hell out of town!');
+            };
+            myParagraph.addEventListener('mouseup', ourFunction);
+
+            var myImage = document.getElementById('myImage');
+            var ourFunction= function(){
+                alert("don't touch me!");
+            };
+            myImage.addEventListener('mouseup', ourFunction);
+        </script>
+    </body>
+</html>

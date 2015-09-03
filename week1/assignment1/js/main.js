@@ -1,1 +1,1 @@
-setTimeout("alert('Print now!')", 5000);
+setTimeout("alert('Print now!');", 5000);
