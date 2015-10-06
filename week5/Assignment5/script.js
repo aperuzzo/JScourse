@@ -20,16 +20,18 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
 var userName = window.prompt("What is your name?");
-if (userName != null) {
-  console.log('Hi ' + userName + '.');
-} else {
-  console.log('Ok, I’ll just call you User.')
-  userName = "User";
-};
+
+if(userName !== "" && userName !== null){
+    console.log("Hi " + userName + "!");
+}
+else {
+  console.log("Okay, I'll just call you User");
+  var userName = "User";
+}
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
-  var favoriteAuthor = window.prompt( userName + ', what is your favorite author? Please enter Churchill, Ghandi, or Demosthenes.');
+  var favoriteAuthor = window.prompt( userName + ' what is your favorite author? Please enter Churchill, Ghandi, or Demosthenes.');
 
   switch(favoriteAuthor) {
     case 'Churchill' :
