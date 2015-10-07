@@ -107,19 +107,19 @@ textarea {
     width: 100px;
     height: 100px;  
     background-color: #000;
-    -webkit-transition: width 2s, height 2s; 
-    -moz-transition: width 2s, height 2s;
-    transition: width 2s, height 2s;
+    -webkit-transition: width 2s, height 2s, background-color 3s; 
+    -moz-transition: width 2s, height 2s, background-color 3s;
+    transition: width 2s, height 2s, background-color 3s;
     transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     -moz-transition-timing-function: ease-in-out;
-
 }
 
 .transform {
     width: 200px !important;
     height: 200px !important;
     background-color: #333 !important;
+    
 }
 
 
