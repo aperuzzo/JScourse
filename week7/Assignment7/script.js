@@ -22,12 +22,16 @@ var churchillSpeech = {
 
 
 var consoleDisplay = document.getElementById('ConsoleDisplay');
-var newH3 = document.createElement('h3');
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
   consoleDisplay.innerHTML = "";
+  //special thanks to RJ Goetz for pointing out the "removeChild" option!!!!
+  if(newH3){
+    consoleDisplay.removeChild(newH3);
+  }
   donatePrompt = window.prompt("How much would you like to donate?");
+  var newH3 = document.createElement('h3');
   consoleDisplay.appendChild(newH3);
   
   if(donatePrompt !== null){
