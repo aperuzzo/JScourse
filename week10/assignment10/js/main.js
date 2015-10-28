@@ -10,4 +10,10 @@ $("document").ready(function (){
 		$(this).next("div").toggle();
 	})
 
+	//to toggle the dispaly of just the h2 code below
+	// var varius = $('h2:contains("Varius")');
+	// varius.click( function(){
+	// 	$(this).toggle();
+	// })
+
 });
