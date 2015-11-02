@@ -114,3 +114,14 @@ form{
 #hero div.current {
     z-index: 2;
 }
+
+
+.red {
+	color: red;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.yellow {
+	background-color: yellow !important;
+}

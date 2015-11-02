@@ -14,4 +14,12 @@ $("document").ready(function (){
 		//create an li and a element that links to cooresponding special h2
 		$('.content ul').append('<li><a href="#special' + i + '">' + headerText + '</a></li>');
 	});
+
+	//toggle background color of .event div and color of contained ul
+	$('div.event').hover(function(){
+		$(this).toggleClass('yellow');
+		$(this).children('ul').toggleClass('red');
+	});
+
 });
+
