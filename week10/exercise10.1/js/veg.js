@@ -1,3 +1,15 @@
+//for index page slideshow
+function rotateImages(){
+	var $current = $('#hero div.current');
+	var $next = ($current.next().length > 0) ? $current.next() : $('#hero div:first');
+
+	$current.removeClass('current').addClass('previous');
+	$next.css('opacity', 0).addClass('current').animate({opacity: 1}, 1300, function(){
+		$current.removeClass('previous');
+
+	})
+}
+
 $("document").ready(function (){
 	//adding v to vegetatian options in room service page
 	$('li[data-type="veg"]').append(' (v)');
@@ -25,13 +37,4 @@ $("document").ready(function (){
 	
 });
 
-function rotateImages(){
-	var $current = $('#hero div.current');
-	var $next = ($current.next().length > 0) ? $current.next() : $('#hero div:first');
 
-	$current.removeClass('current').addClass('previous');
-	$next.css('opacity', 0).addClass('current').animate({opacity: 1}, 1300, function(){
-		$current.removeClass('previous');
-
-	})
-}
