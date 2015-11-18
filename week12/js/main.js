@@ -9,6 +9,7 @@ $("document").ready(function (){
 		$(this).parent().attr('id', 'recipe-' + i);
 		var navText = $(this).text();
 		//create an li and a element that links to cooresponding recipe title
+		//nav created
 		$('#navItems').append('<a href="#recipe-' + i + '"><li>' + navText + '</li></a>');
 
 		var //vars created AFTER nav is built
